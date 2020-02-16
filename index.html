@@ -4,14 +4,108 @@
     <meta charset="utf-8">
     <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendor/normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="raphael-2.3.0/raphael.js"></script>
+    <script src="us-map-1.0.1/jquery.usmap.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    
+
   </head>
   <body>
 
+    <!--UPPER HEADER-->
+    <div class="upper-header flex-end">
+      <div class="upper-header-box">Focus Areas</div>
+      <div class="upper-header-box">Member Portal</div>
+      <div class="upper-header-box">Job Bank</div>
+      <div class="upper-header-box">LogIn/SignUp</div>
+    </div>
 
+    <!--NAV BAR-->
+    <header class="menu flex-center">
+      <nav>
+        <ul class="flex-center">
+          <!-- one link unit -->
+          <li class="nav-container">
+            <a class="nav-top-link" href="#">Field Building</a>
+            <!-- dropdown -->
+            <div class="nav-dropdown">
+              <ul>
+                <li>
+                  <a href="#">About Impact Investing</a>
+                </li>
+                <li>
+                  <a href="#">Thought Leadership</a>
+                </li>
+                <li>
+                  <a href="#">Impact In Action</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end dropdown -->
+          </li>
+          <li class="nav-container">
+            <a class="nav-top-link" href="#">Events</a>
+            <!-- dropdown -->
+            <div class="nav-dropdown">
+              <ul>
+                <li>
+                  <a href="#">Programs</a>
+                </li>
+                <li>
+                  <a href="#">About 1</a>
+                </li>
+                <li>
+                  <a href="#">About 1</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end dropdown -->
+          </li>
+          <li class="nav-container">
+            <a class="nav-top-link" href="#">News</a>
+          </li>
+          <li class="nav-container">
+            <a class="nav-top-link" href="#">About MIE</a>
+            <!-- dropdown -->
+            <div class="nav-dropdown">
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Our Members</a>
+                </li>
+                <li>
+                  <a href="#">Our Staff</a>
+                </li>
+                <li>
+                  <a href="#">Newsletters</a>
+                </li>
+                <li>
+                  <a href="#">Member Portal</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end dropdown -->
+          </li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul>
+          <li class="nav-container">
+            <a id="sign-up" class="nav-top-link" href="#">Join</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!--MAP-->
+    <div id="map"></div>
+    <div id="clicked-state"></div>
 
   </body>
 </html>
